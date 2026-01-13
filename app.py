@@ -25,6 +25,12 @@ def players():
     return jsonify({
         "players": last_players
     })
+    
+@app.route("/players_api")
+def players_api():
+    return {
+        "players": last_players
+    }
 
 @app.route("/")
 def index():
