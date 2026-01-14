@@ -17,7 +17,7 @@ def webrequest():
     else:
         print("POST inválido:", content)
 
-    return "OK"
+    return ""
 
 @app.route("/players", methods=["GET"])
 def players():
